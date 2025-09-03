@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from .views import https_requst 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('https-requst',https_requst)
 ]
